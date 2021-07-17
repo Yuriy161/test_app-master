@@ -1,5 +1,3 @@
-# TEST APP
-
 ## My comments (17/07/2021)
 
 Добавил файл autotests.py и 4 шаблона в директорию /app-files/current/
@@ -16,7 +14,7 @@
 
 
 
-
+# TEST APP
 
 This is a test app.
 
