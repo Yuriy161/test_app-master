@@ -1,6 +1,6 @@
 # TEST APP
 
-## App spec (17/07/2021)
+## My comments (17/07/2021)
 
 Добавил файл autotests.py и 4 шаблона в директорию /app-files/current/
 
@@ -8,7 +8,6 @@
 
 Найденные проблемы:
 1. Не назначается custom id при передаче data={"tmpl_id":"my_custom_id"}
-
 
 + нет возможности проверить текущий id
 2. “Parent element should be present in the list of elements” - не отображается
