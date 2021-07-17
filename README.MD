@@ -1,5 +1,24 @@
 # TEST APP
 
+## App spec (17/07/2021)
+
+Добавил файл autotests.py и 4 шаблона в директорию /app-files/current/
+
+Тест покрывает 4 запроса из раздела API spec (list, upload, install, delete).
+
+Найденные проблемы:
+1. Не назначается custom id при передаче data={"tmpl_id":"my_custom_id"}
+
+
++ нет возможности проверить текущий id
+2. “Parent element should be present in the list of elements” - не отображается
+3. “Buttons on the rendered page should be clickable except case with no link provided” - clickable если нет ссылки
+4. Можно создать два шаблона с одинаковыми id	
+
+
+
+
+
 This is a test app.
 
 The app contains bugs.
