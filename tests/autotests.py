@@ -11,6 +11,7 @@ def test_list_templates():
     print(r, r.ok)
     print(r.json())
     assert r.ok
+    assert 'templates' in r.json()
 
 
 def test_upload_template():
@@ -23,6 +24,8 @@ def test_upload_template():
     print(r, r.ok)
     print(r.json())
     assert r.ok
+    assert "Template successfully uploaded" in r.json()['message']
+    assert "tmpl_id=" + template_name in r.json()['message']
 
 
 def test_install_template():
@@ -31,6 +34,7 @@ def test_install_template():
     print(r, r.ok)
     pprint.pprint(r.json())
     assert r.ok
+    assert "Template with tmpl_id=" + template_name + " successfully installed!" in r.json()['message']
 
 
 def test_delete_template():
@@ -42,6 +46,7 @@ def test_delete_template():
     print(r, r.ok)
     print(r.json())
     assert r.ok
+    assert "Template with tmpl_id=" + template_name + " successfully deleted!" in r.json()['message']
 
     r = requests.get(url=url + "/api/v1/templates")
     number_of_templates2 = len(r.json()['templates'])
