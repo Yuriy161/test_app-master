@@ -1,6 +1,6 @@
 ## My comments (17/07/2021)
 
-Добавил файл autotests.py и 4 шаблона в директорию /app-files/current/
+Добавил файл autotests.py и 4 шаблона в директорию my_templates
 
 Тест покрывает 4 запроса из раздела API spec (list, upload, install, delete).
 
