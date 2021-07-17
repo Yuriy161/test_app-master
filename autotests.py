@@ -14,7 +14,7 @@ def test_list_templates():
 
 
 def test_upload_template():
-    file = {'file': open(os.path.abspath("app-files/current/" + template_name + ".yaml"), 'rb')}
+    file = {'file': open(os.path.abspath("my_templates/" + template_name + ".yaml"), 'rb')}
     headers = {}
     data = {}
     # data = {"tmpl_id": "2"}

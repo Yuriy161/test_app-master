@@ -1,0 +1,4 @@
+ -  id: 4
+    label: Template 4
+    link: https://en.wikipedia.org/wiki/YAML
+    depends: 1
