@@ -8,7 +8,10 @@
 1. Не назначается custom id при передаче data={"tmpl_id":"my_custom_id"} + нет возможности проверить текущий id
 2. “Parent element should be present in the list of elements” - не отображается
 3. “Buttons on the rendered page should be clickable except case with no link provided” - clickable если нет ссылки
-4. Можно создать два шаблона с одинаковыми id	
+4. Можно создать два шаблона с одинаковыми id
+5. При повторных тестах, по запросу "/api/v1/templates" не отображается список уже существующих шаблонов.
+6. По запросу “upload_template” нет проверки на то что создаваемый шаблон уже существует.
+	
 
 
 
